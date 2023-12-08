@@ -60,7 +60,11 @@
 				"minCount": 1,
 				"enchantments": [
 					{
-						"enchantment": "minecraft:protection",
+						"enchantment": "minecraft:aqua_affinity",
+						"enchantmentLevel": 1
+					}, 
+					{
+						"enchantment": "minecraft:efficiency",
 						"enchantmentLevel": 2
 					}
 				],
