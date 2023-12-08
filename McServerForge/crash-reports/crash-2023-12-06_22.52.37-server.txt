@@ -1,0 +1,129 @@
+---- Minecraft Crash Report ----
+
+WARNING: coremods are present:
+  llibrary (llibrary-core-1.0.11-1.12.2.jar)
+  McLib core mod (mclib-2.4.2-1.12.2.jar)
+  ForgelinPlugin (Forgelin-1.8.4.jar)
+  MalisisCorePlugin (malisiscore-1.12.2-6.5.1.jar)
+  Quark Plugin (Quark-r1.6-179.jar)
+  FutureMC (future-mc-0.2.11.jar)
+  ObfuscatePlugin (obfuscate-0.4.2-1.12.2.jar)
+  CTMCorePlugin (CTM-MC1.12.2-1.0.2.31.jar)
+  TLSkinCapeHookLoader (tlskincape_1.12.2-1.4.jar)
+Contact their authors BEFORE contacting forge
+
+// Daisy, daisy...
+
+Time: 6/12/23 22:52
+Description: Exception in server tick loop
+
+net.minecraftforge.fml.common.LoaderExceptionModCrash: Caught exception from Quark (quark)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (x86) version 10.0
+	Java Version: 1.8.0_371, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) Client VM (mixed mode, sharing), Oracle Corporation
+	Memory: 610344 bytes (0 MB) / 259522560 bytes (247 MB) up to 259522560 bytes (247 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP 9.42 Powered by Forge 14.23.5.2860 47 mods loaded, 46 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State | ID                         | Version               | Source                                  | Signature                                |
+	|:----- |:-------------------------- |:--------------------- |:--------------------------------------- |:---------------------------------------- |
+	| LCH   | minecraft                  | 1.12.2                | minecraft.jar                           | None                                     |
+	| LCH   | mcp                        | 9.42                  | minecraft.jar                           | None                                     |
+	| LCH   | FML                        | 8.0.99.99             | forge-1.12.2-14.23.5.2860-universal.jar | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+	| LCH   | forge                      | 14.23.5.2860          | forge-1.12.2-14.23.5.2860-universal.jar | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+	| LCH   | obfuscate                  | 0.4.2                 | minecraft.jar                           | None                                     |
+	| LCH   | aether_legacy              | 1.5.3.2               | aether-1.12.2-v1.5.3.2.jar              | None                                     |
+	| LCH   | atum                       | 2.0.20                | Atum-1.12.2-2.0.20.jar                  | None                                     |
+	| LCH   | crafttweaker               | 4.1.20                | CraftTweaker2-1.12-4.1.20.695.jar       | None                                     |
+	| LCH   | jei                        | 4.16.1.301            | jei_1.12.2-4.16.1.301.jar               | None                                     |
+	| LCE   | quark                      | r1.6-179              | Quark-r1.6-179.jar                      | None                                     |
+	| LC    | autoreglib                 | 1.3-32                | AutoRegLib-1.3-32.jar                   | None                                     |
+	| LC    | bookshelf                  | 2.3.590               | Bookshelf-1.12.2-2.3.590.jar            | d476d1b22b218a10d845928d1665d45fce301b27 |
+	| LC    | carryon                    | 1.12.3                | carryon-1.12.2-1.12.7.23.jar            | None                                     |
+	| LC    | chisel                     | MC1.12.2-1.0.2.45     | Chisel-MC1.12.2-1.0.2.45.jar            | None                                     |
+	| LC    | corpse                     | 1.12.2-1.0.8          | corpse-1.12.2-1.0.8.jar                 | None                                     |
+	| LC    | crafttweakerjei            | 2.0.3                 | CraftTweaker2-1.12-4.1.20.695.jar       | None                                     |
+	| LC    | customspawner              | 3.11.4                | CustomMobSpawner-3.11.5.jar             | None                                     |
+	| LC    | props                      | 2.6.3.7               | Decocraft-2.6.3.7_1.12.2.jar            | None                                     |
+	| LC    | mocreatures                | 12.0.5                | DrZharks+MoCreatures+Mod-12.0.5.jar     | None                                     |
+	| LC    | ebwizardry                 | 4.3.11                | ElectroblobsWizardry-4.3.11.jar         | None                                     |
+	| LC    | elevatorid                 | 1.3.14                | ElevatorMod-1.12.2-1.3.14.jar           | None                                     |
+	| LC    | mclib                      | 2.4.2                 | mclib-2.4.2-1.12.2.jar                  | None                                     |
+	| LC    | emoticons                  | 1.1.2                 | emoticons-1.1.2-1.12.2.jar              | None                                     |
+	| LC    | mod_lavacow                | 1.4.0                 | Fish's+Undead+Rising-1.4.0.jar          | None                                     |
+	| LC    | forgelin                   | 1.8.4                 | Forgelin-1.8.4.jar                      | None                                     |
+	| LC    | llibrary                   | 1.7.20                | llibrary-1.7.20-1.12.2.jar              | b9f30a813bee3b9dd5652c460310cfcd54f6b7ec |
+	| LC    | fossil                     | 8.0.5                 | fossilsarcheology-8.0.6.jar             | None                                     |
+	| LC    | cfm                        | 6.3.0                 | furniture-6.3.2-1.12.2.jar              | None                                     |
+	| LC    | futuremc                   | 0.2.6                 | future-mc-0.2.11.jar                    | None                                     |
+	| LC    | journeymap                 | 1.12.2-5.7.1          | journeymap-1.12.2-5.7.1 (1).jar         | None                                     |
+	| LC    | libraryex                  | 1.2.2                 | LibraryEx-1.12.2-1.2.2.jar              | None                                     |
+	| LC    | lootbags                   | 2.5.8.5               | LootBags-1.12.2-2.5.8.5.jar             | None                                     |
+	| LC    | malisiscore                | 1.12.2-6.5.1-SNAPSHOT | malisiscore-1.12.2-6.5.1.jar            | None                                     |
+	| LC    | malisisdoors               | 1.12.2-7.3.0          | malisisdoors-1.12.2-7.3.0.jar           | None                                     |
+	| LC    | mantle                     | 1.12-1.3.3.55         | Mantle-1.12-1.3.3.55.jar                | None                                     |
+	| LC    | mca                        | 6.1.0                 | MCA-Espanol-1.12.2.jar                  | None                                     |
+	| LC    | mowziesmobs                | 1.5.8                 | mowziesmobs-1.5.8.jar                   | None                                     |
+	| LC    | netherex                   | 2.2.5                 | NetherEx-1.12.2-2.2.5.jar               | None                                     |
+	| LC    | reap                       | 1.5.3                 | reap-1.5.3.jar                          | None                                     |
+	| LC    | spartanshields             | 1.5.5                 | SpartanShields-1.12.2-1.5.5.jar         | None                                     |
+	| LC    | tconstruct                 | 1.12.2-2.13.0.183     | TConstruct-1.12.2-2.13.0.183.jar        | None                                     |
+	| LC    | tlauncher_custom_cape_skin | 1.4                   | tlskincape_1.12.2-1.4.jar               | None                                     |
+	| LC    | uteamcore                  | 2.2.5.255             | u_team_core-1.12.2-2.2.5.255.jar        | None                                     |
+	| LC    | usefulbackpacks            | 1.5.4.85              | useful_backpacks-1.12.2-1.5.4.85.jar    | None                                     |
+	| LC    | vehicle                    | 0.44.1                | vehicle-mod-0.44.1-1.12.2.jar           | None                                     |
+	| LC    | waystones                  | 4.1.0                 | Waystones_1.12.2-4.1.0.jar              | None                                     |
+	| UD    | mclib_core                 | 2.4.2                 | minecraft.jar                           | None                                     |
+
+	Loaded coremods (and transformers): 
+llibrary (llibrary-core-1.0.11-1.12.2.jar)
+  net.ilexiconn.llibrary.server.core.plugin.LLibraryTransformer
+  net.ilexiconn.llibrary.server.core.patcher.LLibraryRuntimePatcher
+McLib core mod (mclib-2.4.2-1.12.2.jar)
+  mchorse.mclib.core.McLibCMClassTransformer
+ForgelinPlugin (Forgelin-1.8.4.jar)
+  
+MalisisCorePlugin (malisiscore-1.12.2-6.5.1.jar)
+  
+Quark Plugin (Quark-r1.6-179.jar)
+  vazkii.quark.base.asm.ClassTransformer
+FutureMC (future-mc-0.2.11.jar)
+  thedarkcolour.futuremc.asm.CoreTransformer
+ObfuscatePlugin (obfuscate-0.4.2-1.12.2.jar)
+  com.mrcrayfish.obfuscate.asm.ObfuscateTransformer
+CTMCorePlugin (CTM-MC1.12.2-1.0.2.31.jar)
+  team.chisel.ctm.client.asm.CTMTransformer
+TLSkinCapeHookLoader (tlskincape_1.12.2-1.4.jar)
+  gloomyfolken.hooklib.minecraft.PrimaryClassTransformer
+	Pulsar/tconstruct loaded Pulses: 
+		- TinkerCommons (Enabled/Forced)
+		- TinkerWorld (Enabled/Not Forced)
+		- TinkerTools (Enabled/Not Forced)
+		- TinkerHarvestTools (Enabled/Forced)
+		- TinkerMeleeWeapons (Enabled/Forced)
+		- TinkerRangedWeapons (Enabled/Forced)
+		- TinkerModifiers (Enabled/Forced)
+		- TinkerSmeltery (Enabled/Not Forced)
+		- TinkerGadgets (Enabled/Not Forced)
+		- TinkerOredict (Enabled/Forced)
+		- TinkerIntegration (Enabled/Forced)
+		- TinkerFluids (Enabled/Forced)
+		- TinkerMaterials (Enabled/Forced)
+		- TinkerModelRegister (Enabled/Forced)
+		- chiselIntegration (Enabled/Not Forced)
+		- quarkIntegration (Enabled/Not Forced)
+
+	Profiler Position: N/A (disabled)
+	Is Modded: Definitely; Server brand changed to 'fml,forge'
+	Type: Dedicated Server (map_server.txt)

@@ -1,0 +1,178 @@
+---- Minecraft Crash Report ----
+
+WARNING: coremods are present:
+  llibrary (llibrary-core-1.0.11-1.12.2.jar)
+  McLib core mod (mclib-2.4.2-1.12.2.jar)
+  ForgelinPlugin (Forgelin-1.8.4.jar)
+  MalisisCorePlugin (malisiscore-1.12.2-6.5.1.jar)
+  Quark Plugin (Quark-r1.6-179.jar)
+  FutureMC (future-mc-0.2.11.jar)
+  ObfuscatePlugin (obfuscate-0.4.2-1.12.2.jar)
+  CTMCorePlugin (CTM-MC1.12.2-1.0.2.31.jar)
+  TLSkinCapeHookLoader (tlskincape_1.12.2-1.4.jar)
+Contact their authors BEFORE contacting forge
+
+// You should try our sister game, Minceraft!
+
+Time: 6/12/23 23:44
+Description: Exception in server tick loop
+
+net.minecraftforge.fml.common.LoaderExceptionModCrash: Caught exception from TLSkinCape (tlauncher_custom_cape_skin)
+Caused by: java.lang.NoClassDefFoundError: net/minecraft/client/Minecraft
+	at org.tlauncher.skin.cape.util.PreparedProfileManager.<init>(PreparedProfileManager.java:43)
+	at org.tlauncher.skin.cape.TLSkinCape.event(TLSkinCape.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraftforge.fml.common.FMLModContainer.handleModStateEvent(FMLModContainer.java:637)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:91)
+	at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:150)
+	at com.google.common.eventbus.Subscriber$1.run(Subscriber.java:76)
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:399)
+	at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:71)
+	at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:116)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:217)
+	at net.minecraftforge.fml.common.LoadController.sendEventToModContainer(LoadController.java:219)
+	at net.minecraftforge.fml.common.LoadController.propogateStateMessage(LoadController.java:197)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:91)
+	at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:150)
+	at com.google.common.eventbus.Subscriber$1.run(Subscriber.java:76)
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:399)
+	at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:71)
+	at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:116)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:217)
+	at net.minecraftforge.fml.common.LoadController.distributeStateMessage(LoadController.java:136)
+	at net.minecraftforge.fml.common.Loader.initializeMods(Loader.java:754)
+	at net.minecraftforge.fml.server.FMLServerHandler.finishServerLoading(FMLServerHandler.java:108)
+	at net.minecraftforge.fml.common.FMLCommonHandler.onServerStarted(FMLCommonHandler.java:338)
+	at net.minecraft.server.dedicated.DedicatedServer.func_71197_b(DedicatedServer.java:219)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:486)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.ClassNotFoundException: net.minecraft.client.Minecraft
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:191)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 37 more
+Caused by: net.minecraftforge.fml.common.asm.ASMTransformerWrapper$TransformerException: Exception in class transformer net.minecraftforge.fml.common.asm.transformers.SideTransformer@6ea94d6a from coremod FMLCorePlugin
+	at net.minecraftforge.fml.common.asm.ASMTransformerWrapper$TransformerWrapper.transform(ASMTransformerWrapper.java:260)
+	at net.minecraft.launchwrapper.LaunchClassLoader.runTransformers(LaunchClassLoader.java:279)
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:176)
+	... 39 more
+Caused by: java.lang.RuntimeException: Attempted to load class bib for invalid side SERVER
+	at net.minecraftforge.fml.common.asm.transformers.SideTransformer.transform(SideTransformer.java:62)
+	at net.minecraftforge.fml.common.asm.ASMTransformerWrapper$TransformerWrapper.transform(ASMTransformerWrapper.java:256)
+	... 41 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_391, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 2100970008 bytes (2003 MB) / 3861381120 bytes (3682 MB) up to 3861381120 bytes (3682 MB)
+	JVM Flags: 2 total; -Xmx4096M -Xms4096M
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP 9.42 Powered by Forge 14.23.5.2860 45 mods loaded, 44 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State | ID                         | Version               | Source                               | Signature                                |
+	|:----- |:-------------------------- |:--------------------- |:------------------------------------ |:---------------------------------------- |
+	| LCHIJ | minecraft                  | 1.12.2                | minecraft.jar                        | None                                     |
+	| LCHIJ | mcp                        | 9.42                  | minecraft.jar                        | None                                     |
+	| LCHIJ | FML                        | 8.0.99.99             | forge.jar                            | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+	| LCHIJ | forge                      | 14.23.5.2860          | forge.jar                            | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+	| LCHIJ | obfuscate                  | 0.4.2                 | minecraft.jar                        | None                                     |
+	| LCHIJ | aether_legacy              | 1.5.3.2               | aether-1.12.2-v1.5.3.2.jar           | None                                     |
+	| LCHIJ | atum                       | 2.0.20                | Atum-1.12.2-2.0.20.jar               | None                                     |
+	| LCHIJ | quark                      | r1.6-179              | Quark-r1.6-179.jar                   | None                                     |
+	| LCHIJ | autoreglib                 | 1.3-32                | AutoRegLib-1.3-32.jar                | None                                     |
+	| LCHIJ | bookshelf                  | 2.3.590               | Bookshelf-1.12.2-2.3.590.jar         | d476d1b22b218a10d845928d1665d45fce301b27 |
+	| LCHIJ | carryon                    | 1.12.3                | carryon-1.12.2-1.12.7.23.jar         | None                                     |
+	| LCHIJ | chisel                     | MC1.12.2-1.0.2.45     | Chisel-MC1.12.2-1.0.2.45.jar         | None                                     |
+	| LCHIJ | corpse                     | 1.12.2-1.0.8          | corpse-1.12.2-1.0.8.jar              | None                                     |
+	| LCHIJ | crafttweaker               | 4.1.20                | CraftTweaker2-1.12-4.1.20.695.jar    | None                                     |
+	| LCHIJ | crafttweakerjei            | 2.0.3                 | CraftTweaker2-1.12-4.1.20.695.jar    | None                                     |
+	| LCHIJ | customspawner              | 3.11.4                | CustomMobSpawner-3.11.5.jar          | None                                     |
+	| LCHIJ | props                      | 2.6.3.7               | Decocraft-2.6.3.7_1.12.2.jar         | None                                     |
+	| LCHIJ | mocreatures                | 12.0.5                | DrZharks+MoCreatures+Mod-12.0.5.jar  | None                                     |
+	| LCHIJ | ebwizardry                 | 4.3.11                | ElectroblobsWizardry-4.3.11.jar      | None                                     |
+	| LCHIJ | elevatorid                 | 1.3.14                | ElevatorMod-1.12.2-1.3.14.jar        | None                                     |
+	| LCHIJ | mclib                      | 2.4.2                 | mclib-2.4.2-1.12.2.jar               | None                                     |
+	| LCHIJ | emoticons                  | 1.1.2                 | emoticons-1.1.2-1.12.2.jar           | None                                     |
+	| LCHIJ | mod_lavacow                | 1.4.0                 | Fish's+Undead+Rising-1.4.0.jar       | None                                     |
+	| LCHIJ | forgelin                   | 1.8.4                 | Forgelin-1.8.4.jar                   | None                                     |
+	| LCHIJ | llibrary                   | 1.7.20                | llibrary-1.7.20-1.12.2.jar           | b9f30a813bee3b9dd5652c460310cfcd54f6b7ec |
+	| LCHIJ | fossil                     | 8.0.5                 | fossilsarcheology-8.0.6.jar          | None                                     |
+	| LCHIJ | cfm                        | 6.3.0                 | furniture-6.3.2-1.12.2.jar           | None                                     |
+	| LCHIJ | futuremc                   | 0.2.6                 | future-mc-0.2.11.jar                 | None                                     |
+	| LCHIJ | libraryex                  | 1.2.2                 | LibraryEx-1.12.2-1.2.2.jar           | None                                     |
+	| LCHIJ | lootbags                   | 2.5.8.5               | LootBags-1.12.2-2.5.8.5.jar          | None                                     |
+	| LCHIJ | malisiscore                | 1.12.2-6.5.1-SNAPSHOT | malisiscore-1.12.2-6.5.1.jar         | None                                     |
+	| LCHIJ | malisisdoors               | 1.12.2-7.3.0          | malisisdoors-1.12.2-7.3.0.jar        | None                                     |
+	| LCHIJ | mantle                     | 1.12-1.3.3.55         | Mantle-1.12-1.3.3.55.jar             | None                                     |
+	| LCHIJ | mca                        | 6.1.0                 | MCA-Espanol-1.12.2.jar               | None                                     |
+	| LCHIJ | mowziesmobs                | 1.5.8                 | mowziesmobs-1.5.8.jar                | None                                     |
+	| LCHIJ | netherex                   | 2.2.5                 | NetherEx-1.12.2-2.2.5.jar            | None                                     |
+	| LCHIJ | reap                       | 1.5.3                 | reap-1.5.3.jar                       | None                                     |
+	| LCHIJ | spartanshields             | 1.5.5                 | SpartanShields-1.12.2-1.5.5.jar      | None                                     |
+	| LCHIJ | tconstruct                 | 1.12.2-2.13.0.183     | TConstruct-1.12.2-2.13.0.183.jar     | None                                     |
+	| LCHIE | tlauncher_custom_cape_skin | 1.4                   | tlskincape_1.12.2-1.4.jar            | None                                     |
+	| LCHI  | uteamcore                  | 2.2.5.255             | u_team_core-1.12.2-2.2.5.255.jar     | None                                     |
+	| LCHI  | usefulbackpacks            | 1.5.4.85              | useful_backpacks-1.12.2-1.5.4.85.jar | None                                     |
+	| LCHI  | vehicle                    | 0.44.1                | vehicle-mod-0.44.1-1.12.2.jar        | None                                     |
+	| LCHI  | waystones                  | 4.1.0                 | Waystones_1.12.2-4.1.0.jar           | None                                     |
+	| UD    | mclib_core                 | 2.4.2                 | minecraft.jar                        | None                                     |
+
+	Loaded coremods (and transformers): 
+llibrary (llibrary-core-1.0.11-1.12.2.jar)
+  net.ilexiconn.llibrary.server.core.plugin.LLibraryTransformer
+  net.ilexiconn.llibrary.server.core.patcher.LLibraryRuntimePatcher
+McLib core mod (mclib-2.4.2-1.12.2.jar)
+  mchorse.mclib.core.McLibCMClassTransformer
+ForgelinPlugin (Forgelin-1.8.4.jar)
+  
+MalisisCorePlugin (malisiscore-1.12.2-6.5.1.jar)
+  
+Quark Plugin (Quark-r1.6-179.jar)
+  vazkii.quark.base.asm.ClassTransformer
+FutureMC (future-mc-0.2.11.jar)
+  thedarkcolour.futuremc.asm.CoreTransformer
+ObfuscatePlugin (obfuscate-0.4.2-1.12.2.jar)
+  com.mrcrayfish.obfuscate.asm.ObfuscateTransformer
+CTMCorePlugin (CTM-MC1.12.2-1.0.2.31.jar)
+  team.chisel.ctm.client.asm.CTMTransformer
+TLSkinCapeHookLoader (tlskincape_1.12.2-1.4.jar)
+  gloomyfolken.hooklib.minecraft.PrimaryClassTransformer
+	Pulsar/tconstruct loaded Pulses: 
+		- TinkerCommons (Enabled/Forced)
+		- TinkerWorld (Enabled/Not Forced)
+		- TinkerTools (Enabled/Not Forced)
+		- TinkerHarvestTools (Enabled/Forced)
+		- TinkerMeleeWeapons (Enabled/Forced)
+		- TinkerRangedWeapons (Enabled/Forced)
+		- TinkerModifiers (Enabled/Forced)
+		- TinkerSmeltery (Enabled/Not Forced)
+		- TinkerGadgets (Enabled/Not Forced)
+		- TinkerOredict (Enabled/Forced)
+		- TinkerIntegration (Enabled/Forced)
+		- TinkerFluids (Enabled/Forced)
+		- TinkerMaterials (Enabled/Forced)
+		- TinkerModelRegister (Enabled/Forced)
+		- chiselIntegration (Enabled/Not Forced)
+		- quarkIntegration (Enabled/Not Forced)
+
+	Profiler Position: N/A (disabled)
+	Is Modded: Definitely; Server brand changed to 'fml,forge'
+	Type: Dedicated Server (map_server.txt)
