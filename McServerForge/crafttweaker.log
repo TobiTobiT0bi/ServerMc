@@ -1,25 +1,32 @@
 [PREINITIALIZATION][SERVER][INFO] Thank you to the Patreon supporters below and others who make CraftTweaker possible!
-NerdyWhiteGuy
-Ivy_
-Phillip Swearingain
-Jordan Pineo
-Quaternary
-Jessie Sims
-NickT
-Peregrinus11
-BrÃƒÂ¸nsted
-AdaraChristine
-Genryu
 Zuniroa
-Spencer Gilbert
-Jonathan McManus
-DreamThorn
-Ncc1702
+Jordan Pineo
+Ivy_
+AdaraChristine
+Phillip Swearingain
 Belathus
+Genryu
+Jessie Sims
+Ncc1702
+DreamThorn
 Hooley
+Jonathan McManus
 Pongo Sapiens
+BrÃƒÂ¸nsted
+NerdyWhiteGuy
+Spencer Gilbert
+Peregrinus11
+Quaternary
+NickT
 If you want to support the mod, checkout https://patreon.com/jaredlll08?s=crtmod
 
 [PREINITIALIZATION][SERVER][INFO] Current loaders after merging: [[preinit]]
 [PREINITIALIZATION][SERVER][INFO] Loading scripts for loader with names [preinit]
 [PREINITIALIZATION][SERVER][INFO] Completed script loading in: 0ms
+[INITIALIZATION][SERVER][INFO] CraftTweaker: Building registry
+[INITIALIZATION][SERVER][INFO] CraftTweaker: Successfully built item registry
+[INITIALIZATION][SERVER][INFO] Current loaders after merging: [[preinit], [recipeevent | crafttweaker]]
+[INITIALIZATION][SERVER][INFO] Loading scripts for loader with names [crafttweaker | recipeevent]
+[INITIALIZATION][SERVER][INFO] Completed script loading in: 0ms
+[POSTINITIALIZATION][SERVER][INFO] Removing recipes for various outputs
+[POSTINITIALIZATION][SERVER][INFO] Applying MrCrayfish's Furniture Mod changes...
