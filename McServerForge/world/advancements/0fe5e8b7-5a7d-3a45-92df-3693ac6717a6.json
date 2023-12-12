@@ -191,6 +191,18 @@
     },
     "done": true
   },
+  "fossil:fossil/stone_tablet": {
+    "criteria": {
+      "iron_pickaxe": "2023-12-11 19:58:49 -0300"
+    },
+    "done": true
+  },
+  "ebwizardry:find_library_ruins": {
+    "criteria": {
+      "surface": "2023-12-11 02:32:42 -0300"
+    },
+    "done": true
+  },
   "iceandfire:iceandfire/root": {
     "criteria": {
       "tick": "2023-12-10 02:13:44 -0300"
@@ -503,6 +515,12 @@
     },
     "done": true
   },
+  "tombstone:tutorial/create_fishing_rod": {
+    "criteria": {
+      "has_fishing_rod": "2023-12-11 03:18:21 -0300"
+    },
+    "done": true
+  },
   "ebwizardry:handbook/scrolls": {
     "criteria": {
       "criteria_0": "2023-12-10 02:55:46 -0300"
@@ -518,6 +536,12 @@
   "aether_legacy:recipes/building_blocks/angelic_stairs": {
     "criteria": {
       "has_the_recipe": "2023-12-10 02:13:44 -0300"
+    },
+    "done": true
+  },
+  "fossil:fossil/fossil_seed": {
+    "criteria": {
+      "fossil_fern_seed": "2023-12-11 02:39:55 -0300"
     },
     "done": true
   },
@@ -677,6 +701,18 @@
     },
     "done": true
   },
+  "minecraft:story/lava_bucket": {
+    "criteria": {
+      "lava_bucket": "2023-12-11 03:05:59 -0300"
+    },
+    "done": true
+  },
+  "tombstone:recipes/from_voodoo_poppet": {
+    "criteria": {
+      "has_ingredient": "2023-12-11 02:08:22 -0300"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/quartz_stairs": {
     "criteria": {
       "has_the_recipe": "2023-12-10 02:13:44 -0300"
@@ -737,6 +773,12 @@
     },
     "done": true
   },
+  "mod_lavacow:mod_lavacow/kill_zombiepiranha": {
+    "criteria": {
+      "kill_zombiepiranha": "2023-12-11 02:10:13 -0300"
+    },
+    "done": true
+  },
   "ebwizardry:handbook/tome_of_arcana": {
     "criteria": {
       "criteria_0": "2023-12-10 03:04:21 -0300"
@@ -781,6 +823,7 @@
   },
   "minecraft:adventure/kill_all_mobs": {
     "criteria": {
+      "skeleton": "2023-12-11 01:58:12 -0300",
       "cave_spider": "2023-12-10 03:48:48 -0300",
       "zombie": "2023-12-10 03:48:39 -0300",
       "witch": "2023-12-10 03:48:59 -0300"
@@ -862,6 +905,12 @@
   "minecraft:recipes/decorations/brown_bed": {
     "criteria": {
       "has_the_recipe": "2023-12-10 02:13:44 -0300"
+    },
+    "done": true
+  },
+  "ebwizardry:artefact": {
+    "criteria": {
+      "ring_fire_biome": "2023-12-11 02:43:48 -0300"
     },
     "done": true
   },
@@ -1147,6 +1196,12 @@
     },
     "done": true
   },
+  "tombstone:tutorial/enchant_voodoo_poppet": {
+    "criteria": {
+      "has_enchanted_voodoo_poppet": "2023-12-11 02:08:22 -0300"
+    },
+    "done": true
+  },
   "minecraft:recipes/redstone/wooden_button": {
     "criteria": {
       "has_the_recipe": "2023-12-10 02:13:44 -0300"
@@ -1273,6 +1328,12 @@
     },
     "done": true
   },
+  "ebwizardry:defeat_evil_wizard": {
+    "criteria": {
+      "criteria_0": "2023-12-11 02:43:29 -0300"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/red_banner": {
     "criteria": {
       "has_the_recipe": "2023-12-10 02:13:44 -0300"
@@ -1339,6 +1400,12 @@
     },
     "done": true
   },
+  "minecraft:story/iron_tools": {
+    "criteria": {
+      "iron_pickaxe": "2023-12-11 02:15:28 -0300"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/orange_banner": {
     "criteria": {
       "has_the_recipe": "2023-12-10 02:13:44 -0300"
@@ -1354,6 +1421,12 @@
   "minecraft:recipes/redstone/birch_fence_gate": {
     "criteria": {
       "has_the_recipe": "2023-12-10 02:13:44 -0300"
+    },
+    "done": true
+  },
+  "ebwizardry:spell_failure": {
+    "criteria": {
+      "criteria_0": "2023-12-11 17:10:12 -0300"
     },
     "done": true
   },
@@ -1414,6 +1487,12 @@
   "tombstone:tutorial/root": {
     "criteria": {
       "auto": "2023-12-10 02:13:44 -0300"
+    },
+    "done": true
+  },
+  "tombstone:tutorial/create_familiar_receptacle": {
+    "criteria": {
+      "has_familiar_receptacle": "2023-12-11 02:08:49 -0300"
     },
     "done": true
   },
@@ -1496,6 +1575,7 @@
       "birch_forest": "2023-12-10 02:38:26 -0300",
       "deep_ocean": "2023-12-10 02:50:29 -0300",
       "beaches": "2023-12-10 02:30:07 -0300",
+      "extreme_hills_with_trees": "2023-12-11 02:05:11 -0300",
       "forest_hills": "2023-12-10 02:26:08 -0300",
       "plains": "2023-12-10 02:13:44 -0300",
       "jungle_hills": "2023-12-10 02:42:30 -0300",
@@ -1572,6 +1652,12 @@
     },
     "done": true
   },
+  "tombstone:tutorial/ancient_fishing_rod": {
+    "criteria": {
+      "has_fishing_rod": "2023-12-11 03:18:21 -0300"
+    },
+    "done": true
+  },
   "minecraft:recipes/brewing/fermented_spider_eye": {
     "criteria": {
       "has_the_recipe": "2023-12-10 02:13:44 -0300"
@@ -1641,6 +1727,12 @@
   "aether_legacy:recipes/building_blocks/hellfire_slab": {
     "criteria": {
       "has_the_recipe": "2023-12-10 02:13:44 -0300"
+    },
+    "done": true
+  },
+  "ebwizardry:handbook/throwables": {
+    "criteria": {
+      "criteria_0": "2023-12-11 03:05:41 -0300"
     },
     "done": true
   },
@@ -1749,6 +1841,12 @@
   "cfm:root": {
     "criteria": {
       "tick": "2023-12-10 02:13:44 -0300"
+    },
+    "done": true
+  },
+  "tombstone:tutorial/ashes_and_bones": {
+    "criteria": {
+      "coded_trigger": "2023-12-11 01:58:53 -0300"
     },
     "done": true
   },
@@ -2401,6 +2499,12 @@
     },
     "done": true
   },
+  "tombstone:tutorial/choose_knowledge": {
+    "criteria": {
+      "coded_trigger": "2023-12-11 01:59:50 -0300"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/cyan_carpet": {
     "criteria": {
       "has_the_recipe": "2023-12-10 02:13:44 -0300"
@@ -2461,6 +2565,12 @@
     },
     "done": true
   },
+  "ebwizardry:all_artefacts": {
+    "criteria": {
+      "ring_fire_biome": "2023-12-11 02:43:48 -0300"
+    },
+    "done": false
+  },
   "minecraft:recipes/misc/light_gray_dye_from_ink_bonemeal": {
     "criteria": {
       "has_the_recipe": "2023-12-10 02:13:44 -0300"
@@ -2500,6 +2610,12 @@
   "minecraft:recipes/misc/bowl": {
     "criteria": {
       "has_the_recipe": "2023-12-10 02:13:44 -0300"
+    },
+    "done": true
+  },
+  "tombstone:tutorial/create_voodoo_poppet": {
+    "criteria": {
+      "has_voodoo_poppet": "2023-12-11 02:08:22 -0300"
     },
     "done": true
   },
@@ -2875,6 +2991,17 @@
     },
     "done": true
   },
+  "ebwizardry:all_spells": {
+    "criteria": {
+      "ice_spikes": "2023-12-11 17:12:32 -0300",
+      "light": "2023-12-11 17:10:54 -0300",
+      "muffle": "2023-12-11 17:16:05 -0300",
+      "ward": "2023-12-11 17:11:04 -0300",
+      "ignite": "2023-12-11 17:11:15 -0300",
+      "smoke_bomb": "2023-12-11 17:11:52 -0300"
+    },
+    "done": false
+  },
   "minecraft:recipes/tools/diamond_axe": {
     "criteria": {
       "has_the_recipe": "2023-12-10 02:13:44 -0300"
@@ -3091,6 +3218,12 @@
     },
     "done": true
   },
+  "tombstone:tutorial/create_magic_tablet": {
+    "criteria": {
+      "has_magic_tablet": "2023-12-11 02:33:11 -0300"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/coal": {
     "criteria": {
       "has_the_recipe": "2023-12-10 02:13:44 -0300"
@@ -3157,6 +3290,12 @@
     },
     "done": true
   },
+  "tombstone:tutorial/strong_or_careful": {
+    "criteria": {
+      "coded_trigger": "2023-12-11 02:04:43 -0300"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/polished_andesite": {
     "criteria": {
       "has_the_recipe": "2023-12-10 02:13:44 -0300"
@@ -3166,6 +3305,12 @@
   "minecraft:recipes/building_blocks/quartz_block": {
     "criteria": {
       "has_the_recipe": "2023-12-10 02:13:44 -0300"
+    },
+    "done": true
+  },
+  "ebwizardry:discover_spell": {
+    "criteria": {
+      "criteria_0": "2023-12-11 17:10:54 -0300"
     },
     "done": true
   },
@@ -3331,6 +3476,12 @@
     },
     "done": true
   },
+  "ebwizardry:handbook/magical_creatures": {
+    "criteria": {
+      "lightning_wraith": "2023-12-11 02:43:35 -0300"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/brown_bed_from_white_bed": {
     "criteria": {
       "has_the_recipe": "2023-12-10 02:13:44 -0300"
@@ -3433,9 +3584,21 @@
     },
     "done": true
   },
+  "fossil:fossil/worktable": {
+    "criteria": {
+      "worktable": "2023-12-11 02:16:53 -0300"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/nether_brick": {
     "criteria": {
       "has_the_recipe": "2023-12-10 02:13:44 -0300"
+    },
+    "done": true
+  },
+  "tombstone:tutorial/enchant_fishing_rod": {
+    "criteria": {
+      "has_fishing_rod": "2023-12-11 03:18:21 -0300"
     },
     "done": true
   },
